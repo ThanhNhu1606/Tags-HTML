@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví Dụ Thẻ HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .group-title {
+            color: red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .tag-name,
+        .tag-description {
+            color: blue;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        li>div {
+            margin: 20px 0px;
+            margin-left: 50px;
+
+        }
+
+        ul li::marker {
+            color: blue;
+            /* Đổi màu bullet */
+        }
+
+        .example {
+            margin-left: 20px;
+            color: green;
+            font-style: italic;
+        }
+
+        .title-page {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-page">
+        <h1><mark>Danh Sách Các Nhóm Thẻ HTML</mark></h1>
+    </div>
+
+    <!-- Nhóm thẻ định dạng văn bản -->
+    <div>
+        <p class="group-title">1. Nhóm thẻ định dạng văn bản</p>
+        <ul>
+            <li><span class="tag-name">&lt;h1&gt; đến &lt;h6&gt;</span>: <span class="tag-description">Tiêu đề (h1 lớn
+                    nhất, h6 nhỏ nhất)</span>
+                <div>
+                    <h1>Tiêu đề cấp 1</h1>
+                    <h2>Tiêu đề cấp 2</h2>
+                    <h3>Tiêu đề cấp 3</h3>
+                    <h4>Tiêu đề cấp 4</h4>
+                    <h5>Tiêu đề cấp 5</h5>
+                    <h6>Tiêu đề cấp 6</h6>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;p&gt;</span>: <span class="tag-description">Đoạn văn bản</span>
+                <div>
+                    <p>Đây là một đoạn văn bản.</p>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;br&gt;</span>: <span class="tag-description">Xuống dòng</span>
+                <div>
+                    <p>Đoạn văn bản tiếp theo có thể được chia bằng <br> thẻ xuống dòng.</p>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;hr&gt;</span>: <span class="tag-description">Dòng kẻ ngang chia nội
+                    dung</span>
+                <div>
+                    <hr>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;strong&gt;</span>: <span class="tag-description">Văn bản in đậm (ý nghĩa nhấn
+                    mạnh)</span>
+                <div>
+                    <p><strong>Đoạn văn bản in đậm (nhấn mạnh)</strong></p>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;em&gt;</span>: <span class="tag-description">Văn bản in nghiêng (ý nghĩa nhấn
+                    mạnh)</span>
+                <div>
+                    <p><em>Đoạn văn bản in nghiêng (nhấn mạnh)</em></p>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;b&gt;</span>: <span class="tag-description">Văn bản in đậm (chỉ định dạng,
+                    không ý nghĩa)</span>
+                <div>
+                    <p><b>Văn bản in đậm (chỉ định dạng, không có ý nghĩa)</b></p>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;i&gt;</span>: <span class="tag-description">Văn bản in nghiêng (chỉ định
+                    dạng, không ý nghĩa)</span>
+                <div>
+                    <p><i>Văn bản in nghiêng (chỉ định dạng, không có ý nghĩa)</i></p>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;span&gt;</span>: <span class="tag-description">Bao quanh nội dung để định
+                    dạng cụ thể</span>
+                <div> <span style="color: red;">Văn bản được bao quanh bằng thẻ span để định dạng đặc biệt.</span>Đây là
+                    đoạn không được bao quanh</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Nhóm thẻ danh sách -->
+    <div>
+        <p class="group-title">2. Nhóm thẻ danh sách</p>
+        <ul>
+            <li><span class="tag-name">&lt;ul&gt;</span>: <span class="tag-description">Danh sách không thứ tự</span>
+                <div>
+                    <ul>
+                        <li>Mục 1</li>
+                        <li>Mục 2</li>
+                        <li>Mục 3</li>
+                    </ul>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;ol&gt;</span>: <span class="tag-description">Danh sách có thứ tự</span>
+                <div>
+                    <ol>
+                        <li>Mục 1</li>
+                        <li>Mục 2</li>
+                        <li>Mục 3</li>
+                    </ol>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;dl&gt;</span>: <span class="tag-description">Danh sách định nghĩa</span>
+                <div>
+                    <dl>
+                        <dt>Thuật ngữ 1</dt>
+                        <dd>Mô tả của thuật ngữ 1</dd>
+                        <dt>Thuật ngữ 2</dt>
+                        <dd>Mô tả của thuật ngữ 2</dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li><span class="tag-name">&lt;dl&gt;</span>: <span class="tag-description">Thuật ngữ trong danh sách định
+                    nghĩa.</span>
+                <div>
+                    <dt>Thuật ngữ 1</dt>
+                    <dt>Thuật ngữ 2</dt>
+                </div>
+            </li>
+
+            <li><span class="tag-name">&lt;dl&gt;</span>: <span class="tag-description">Mô tả hoặc định nghĩa của thuật
+                    ngữ.</span>
+                <div>
+                    <dd>Mô tả của thuật ngữ 1</dd>
+                    <dd>Mô tả của thuật ngữ 2</dd>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Nhóm thẻ liên kết và hình ảnh -->
+    <div>
+        <p class="group-title">3. Nhóm thẻ liên kết và hình ảnh</p>
+        <ul>
+            <li><span class="tag-name">&lt;a&gt;</span>: <span class="tag-description">Thẻ liên kết</span>
+                <div><a href="https://www.example.com" style="color: black;">Truy cập vào trang web example.+</a></div>
+            </li>
+            <li><span class="tag-name">&lt;img&gt;</span>: <span class="tag-description">Thẻ hình ảnh</span>
+                <div><img src="https://via.placeholder.com/150" alt="Hình ảnh minh họa"></div>
+            </li>
+            <li><span class="tag-name">&lt;picture&gt;</span>: <span class="tag-description">Thẻ chứa hình ảnh với nhiều
+                    nguồn thay thế</span>
+                <div>
+                    <picture>
+                        <source srcset="https://via.placeholder.com/150" media="(max-width: 600px)">
+                        <img src="https://via.placeholder.com/300" alt="Hình ảnh thay thế">
+                    </picture>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;figure&gt;</span>: <span class="tag-description">Thẻ chứa hình ảnh và chú
+                    thích</span>
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="Hình ảnh minh họa">
+                        <figcaption>Chú thích cho hình ảnh này</figcaption>
+                    </figure>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;figcaption&gt;</span>: <span class="tag-description">Chú thích cho hình
+                    ảnh</span>
+                <div>
+                    <figcaption>Chú thích cho hình ảnh này</figcaption>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Nhóm thẻ bảng -->
+    <div>
+        <p class="group-title">4. Nhóm thẻ bảng</p>
+        <ul>
+            <li><span class="tag-name">&lt;table&gt;</span>: <span class="tag-description">Tạo bảng</span>
+                <div>
+                    <table border="1">
+                        <tr>
+                            <th>Tên</th>
+                            <th>Tuổi</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Jane</td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;tr&gt;</span>: <span class="tag-description">Tạo một dòng trong bảng</span>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Ví dụ dòng bảng</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;th&gt;</span>: <span class="tag-description">Tạo tiêu đề cho bảng</span>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Tiêu đề</th>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;td&gt;</span>: <span class="tag-description">Tạo ô trong bảng</span>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Ô dữ liệu bảng</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p class="group-title">5. Nhóm thẻ ngữ nghĩa</p>
+        <ul>
+            <li><span class="tag-name">&lt;mark&gt;</span>:<span class="tag-description"> Đánh dấu văn bản quan trọng
+                    <div>
+                        <p><mark>Văn bản quan trọng được đánh dấu</mark></p>
+                    </div>
+            </li>
+            <li><span class="tag-name">&lt;time&gt;</span>:<span class="tag-description"> Định nghĩa thời gian hoặc ngày
+                    tháng</span>
+                <div><time datetime="2024-12-25">Ngày 25 tháng 12, 2024</time></div>
+            </li>
+            <li><span class="tag-name">&lt;abbr&gt;</span>:<span class="tag-description"> Viết tắt</span>
+                <div><abbr title="HyperText Markup Language">HTML</abbr></div>
+            </li>
+            <li><span class="tag-name">&lt;code&gt;</span>:<span class="tag-description"> Hiển thị mã nguồn</span>
+                <div><code>const x = 10;</code></div>
+            </li>
+            <li><span class="tag-name">&lt;pre&gt;</span>:<span class="tag-description"> Hiển thị văn bản định dạng
+                    sẵn</span>
+                <div>
+                    <pre>
+function hello() {
+    console.log('Hello, world!');
+}
+            </pre>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;blockquote&gt;</span>:<span class="tag-description"> Trích dẫn khối văn
+                    bản</span>
+                <div>
+                    <blockquote>
+                        “Đoạn trích dẫn này được trích từ một nguồn khác.”
+                    </blockquote>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;cite&gt;</span>:<span class="tag-description"> Chú thích nguồn trích
+                    dẫn</span>
+                <div><cite>John Doe, <i>JavaScript Programming</i>, 2024</cite></div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p class="group-title">6. Nhóm thẻ biểu mẫu</p>
+        <ul>
+            <li><span class="tag-name">&lt;form&gt;</span>:<span class="tag-description"> Tạo biểu mẫu</span>
+                <div>
+                    <form action="#">
+                        <label for="name">Tên:</label>
+                        <input type="text" id="name" name="name">
+                    </form>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;input&gt;</span>:<span class="tag-description"> Trường nhập dữ liệu</span>
+                <div><input type="text" placeholder="Nhập tên của bạn"></div>
+            </li>
+            <li><span class="tag-name">&lt;textarea&gt;</span>:<span class="tag-description"> Ô nhập văn bản nhiều
+                    dòng</span>
+                <div><textarea rows="4" cols="50">Nhập văn bản ở đây</textarea></div>
+            </li>
+            <li><span class="tag-name">&lt;button&gt;</span>:<span class="tag-description"> Nút bấm</span>
+                <div><button>Nhấn vào đây</button></div>
+            </li>
+            <li><span class="tag-name">&lt;select&gt;</span>:<span class="tag-description"> Menu chọn</span>
+                <div>
+                    <select>
+                        <option value="option1">Lựa chọn 1</option>
+                        <option value="option2">Lựa chọn 2</option>
+                        <option value="option3">Lựa chọn 3</option>
+                    </select>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;option&gt;</span>:<span class="tag-description"> Tùy chọn trong menu
+                    chọn</span>
+                <div>
+                    <select>
+                        <option value="option1">Lựa chọn 1</option>
+                        <option value="option2">Lựa chọn 2</option>
+                    </select>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;label&gt;</span>:<span class="tag-description"> Gắn nhãn cho trường nhập
+                    liệu</span>
+                <div><label for="email">Email:</label><input type="email" id="email" name="email"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="password"&gt;</span>:<span class="tag-description"> Trường nhập
+                    mật khẩu</span>
+                <div><input type="password" placeholder="Nhập mật khẩu"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="tel"&gt;</span>:<span class="tag-description"> Trường nhập số
+                    điện thoại</span>
+                <div><input type="tel" placeholder="Nhập số điện thoại"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="url"&gt;</span>:<span class="tag-description"> Trường nhập
+                    URL</span>
+                <div><input type="url" placeholder="Nhập URL"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="date"&gt;</span>:<span class="tag-description"> Trường nhập
+                    ngày</span>
+                <div><input type="date" placeholder="Chọn ngày"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="time"&gt;</span>:<span class="tag-description"> Trường nhập thời
+                    gian</span>
+                <div><input type="time" placeholder="Chọn thời gian"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="datetime-local"&gt;</span>:<span class="tag-description"> Trường
+                    nhập ngày và giờ (lúc hiện tại)</span>
+                <div><input type="datetime-local" placeholder="Chọn ngày và giờ"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="month"&gt;</span>:<span class="tag-description"> Trường nhập
+                    tháng và năm</span>
+                <div><input type="month" placeholder="Chọn tháng và năm"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="week"&gt;</span>:<span class="tag-description"> Trường nhập tuần
+                    và năm</span>
+                <div><input type="week" placeholder="Chọn tuần"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="search"&gt;</span>:<span class="tag-description"> Trường tìm
+                    kiếm</span>
+                <div><input type="search" placeholder="Tìm kiếm..."></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="color"&gt;</span>:<span class="tag-description"> Trường chọn
+                    màu</span>
+                <div><input type="color" value="#ff0000"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="radio"&gt;</span>:<span class="tag-description"> Chọn một trong
+                    các tùy chọn (Radio button)</span>
+                <div>
+                    <label><input type="radio" name="gender" value="male"> Nam</label>
+                    <label><input type="radio" name="gender" value="female"> Nữ</label>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;input type="checkbox"&gt;</span>:<span class="tag-description"> Chọn nhiều
+                    tùy chọn (Checkbox)</span>
+                <div>
+                    <label><input type="checkbox" name="subscribe" value="yes"> Đăng ký nhận thông tin</label>
+                </div>
+            </li>
+            <li><span class="tag-name">&lt;input type="file"&gt;</span>:<span class="tag-description"> Chọn tệp
+                    tin</span>
+                <div><input type="file" name="fileupload"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="submit"&gt;</span>:<span class="tag-description"> Nút gửi biểu
+                    mẫu</span>
+                <div><input type="submit" value="Gửi"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="reset"&gt;</span>:<span class="tag-description"> Nút reset biểu
+                    mẫu</span>
+                <div><input type="reset" value="Làm lại"></div>
+            </li>
+            <li><span class="tag-name">&lt;input type="hidden"&gt;</span>:<span class="tag-description"> Trường ẩn,
+                    không hiển thị trên giao diện</span>
+                <div><input type="hidden" name="userID" value="12345"></div>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
